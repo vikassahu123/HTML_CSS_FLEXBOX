@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+}
+.column-1{
+    background-color:rgb(176, 250, 166);
+    flex: 1;
+}
+.column-2{
+    flex-direction: column;
+    flex: 5;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+/* > means inside */
+.content > article {
+    background: rgb(243, 243, 235);
+    flex: 3;
+    min-height: 60vh;
+  }
+.content > aside {
+    background: rgb(226, 226, 147);
+    flex: 1;
+}
+header , footer , article , nav , aside {
+    padding: 1em;
+}
+header , footer {
+    background:  yellowgreen;
+    height: 20vh;
+}
